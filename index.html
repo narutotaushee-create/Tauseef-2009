@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Happy Birthday Ayesha 🎉</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: 'Poppins', Arial, sans-serif;
+    }
+
+    .card {
+      position: relative;
+      width: 90%;
+      max-width: 420px;
+      background: rgba(255,255,255,0.08);
+      border-radius: 20px;
+      padding: 40px 20px;
+      text-align: center;
+      color: #fff;
+      backdrop-filter: blur(10px);
+      box-shadow: 0 20px 50px rgba(0,0,0,0.4);
+      overflow: hidden;
+    }
+
+    .card::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      border-radius: 20px;
+      padding: 2px;
+      background: linear-gradient(120deg, #ff9a9e, #fad0c4);
+      -webkit-mask:
+        linear-gradient(#fff 0 0) content-box,
+        linear-gradient(#fff 0 0);
+      -webkit-mask-composite: xor;
+      mask-composite: exclude;
+    }
+
+    h1 {
+      font-size: 3rem;
+      letter-spacing: 2px;
+      margin: 10px 0;
+      animation: pop 1.4s ease;
+    }
+
+    h2 {
+      font-size: 1.3rem;
+      font-weight: 400;
+      opacity: 0.9;
+      margin-bottom: 10px;
+    }
+
+    .age {
+      font-size: 1.5rem;
+      color: #ffd369;
+      margin: 15px 0;
+      animation: glow 2s infinite alternate;
+    }
+
+    p {
+      font-size: 1rem;
+      line-height: 1.6;
+      opacity: 0.95;
+    }
+
+    .corner {
+      position: absolute;
+      width: 90px;
+      opacity: 0.9;
+    }
+
+    .top-left {
+      top: 10px;
+      left: 10px;
+    }
+
+    .bottom-right {
+      bottom: 10px;
+      right: 10px;
+    }
+
+    @keyframes pop {
+      from { transform: scale(0.8); opacity: 0; }
+      to { transform: scale(1); opacity: 1; }
+    }
+
+    @keyframes glow {
+      from { text-shadow: 0 0 6px #ffd369; }
+      to { text-shadow: 0 0 18px #ffd369; }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="card">
+
+    <!-- Mikasa-style images (CHANGE LINKS IF YOU WANT) -->
+    <img class="corner top-left"
+      src="https://i.imgur.com/6XKQJYQ.png"
+      alt="anime corner">
+
+    <img class="corner bottom-right"
+      src="https://i.imgur.com/6XKQJYQ.png"
+      alt="anime corner">
+
+    <h2>🎉 Happy Birthday 🎉</h2>
+    <h1>AYESHA</h1>
+
+    <div class="age">✨ 20 Years Young ✨</div>
+
+    <p>
+      A small card,  
+      but made with real effort.  
+      Hope today brings you smiles, calm,  
+      and moments worth remembering 🌙✨
+    </p>
+
+  </div>
+
+</body>
+  </html>
